@@ -58,6 +58,7 @@ class Project2:
                 video_url = rtsp_url
                 self.cap = cv2.VideoCapture(video_url)
 
+        run_button = st.button("Run")
         frame_place = st.empty()  # Placeholder for displaying video frames
 
         if source_option == "Mobile camera" and img_file is not None:
